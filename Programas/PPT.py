@@ -1,8 +1,7 @@
 def jogo():
     import random
     
-    seu_movimento = input("Pedra, papel ou tesoura:")
-    seu_movimento.lower() # coloca a string em minúsculo
+    seu_movimento = input("Pedra, papel ou tesoura:").lower() # coloca a string em minúsculo
 
     # chama a função random e escolhe o movimento da máquina de forma aleatória
     máquina = random.random()
