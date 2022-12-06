@@ -7,7 +7,7 @@ def wifi_code(ssid, hidden, authentication_type, password=None):
     hidden = 'true' if hidden else 'false'
     if authentication_type in ('WPA', 'WEP'):
         if password is None:
-            raise TypeError('For WPA and WEP, password should not be None.')
+            raise TypeError('Para WPA e WEP, o password não pode ser vazio.')
         return 'WIFI:T:{type};S:{ssid};P:{password};H:{hidden};;'.format(
             type=authentication_type, ssid=ssid, password=password, hidden=hidden
         )
